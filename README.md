@@ -8,7 +8,7 @@ Logs will be parsed and index into Amazon ElasticSearch Service and display as a
 ## Deploy AWS Lambda
 ```javascript
 // build
-$ git clone 
+$ git clone https://github.com/jameswu0629/cloudfront-report.git
 $ cd cloudfront-report
 $ ./bin/activator assembly
 
