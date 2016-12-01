@@ -1,7 +1,7 @@
 # cloudfront-report
 
 Scala code as AWS Lambda which can be triggered automaticlly when there is a new CloudFront log coming to your S3 bucket. 
-Logs will be parsed and index into Amazon ElasticSearch Service and display as a performance report  on Kibana.
+Logs will be parsed and index into Amazon Elasticsearch Service and display as a performance report  on Kibana.
 
 ![alt tag](https://c8.staticflickr.com/6/5820/30383149743_dae066abdb_k.jpg)
 
@@ -29,7 +29,7 @@ $ aws lambda create-function \
 ## Setup trigger
 ![alt tag](https://c6.staticflickr.com/6/5454/30383461733_5ae3b7e2f7_b.jpg)
 
-## ElasticSearch mapping
+## Elasticsearch mapping
 ```javascript
 {
 	"template": "logstash-*",
@@ -60,5 +60,10 @@ $ aws lambda create-function \
 }
 ```
 
+## Kibana
+### Settings
+![alt tag](https://c1.staticflickr.com/6/5628/31201332072_fc98b234bd_b.jpg)
+
+
 ## TODO
-- Use ElasticSearch Bulk API to batch process documents.
+- Use Elasticsearch Bulk API to batch process documents.
