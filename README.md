@@ -1,7 +1,13 @@
 # cloudfront-report
 
 Scala code as AWS Lambda which can be triggered automaticlly when there is a new CloudFront log coming to your S3 bucket. 
-Logs will be parsed and index into Amazon Elasticsearch Service and display as a performance report  on Kibana.
+Logs will be parsed and index into Amazon Elasticsearch Service and
+display as a performance report  on Kibana.
+
+Currently you can create 3 types of reports on dashboard
+  - Bad download performance (< 200kb) showing on map
+  - POP distribution, which can show you edge locations
+  - Country distribution, which can show you user locations
 
 ![alt tag](https://c8.staticflickr.com/6/5820/30383149743_dae066abdb_k.jpg)
 
